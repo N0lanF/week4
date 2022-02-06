@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<body>
+    <style>
+
+        header {
+            width: 90%;
+            height: 100px;
+            background-color: rgb(126, 0, 0);
+            border: 3px solid black;
+            padding: 10px;
+            margin: 25px;
+        }
+
+        nav {
+
+            position: fixed;
+            width: 90%;
+            height: 50px;
+            background-color: rgb(241, 88, 88);
+            position: fixed;
+            top: 170px;
+            left: 35px;
+        }
+
+        article {
+            width: 65%;
+            height: 200px;
+            background-color: rgb(161, 46, 46);
+            border: 5px solid black;
+            position: relative;
+            top: 15px;
+
+        }
+
+        aside {
+
+            width: 40%;
+            height: 420px;
+            background-color: rgb(161, 46, 46);
+            position: absolute;
+            left: 50%;
+            right: 10%;
+            top: 235px
+        }
+
+        footer {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(126, 0, 0);
+            position: fixed;
+            bottom: 0px;
+
+        }
+
+        .articles {
+            position: relative;
+            left: 30px;
+            top: 45px;
+            width: 65%;
+            height: 70%;
+
+        }
+
+    </style>
+    <header>
+        <p>the header does not have any positioning applied so it just stays in its default position.</p>
+    </header>
+
+    <nav>
+    <p>The nav bar uses fixed positioning. which means it can be moved left, right, up, and down and will stay in that position even it something else is added. it is in a fixed poosition at top: 170px; left: 35px;</p>
+    </nav>
+
+    <div>
+
+        <div class="articles">
+
+            <article>
+                <p> this article uses relative positioning. this means that its poositioning is relative to whatever it is inside of. In this case its positioning is 15 px down from the top left corner of the div it is inside of.</p>
+            </article>
+
+            <article>
+
+            </article>
+
+        </div>
+
+    <aside>
+        <p> The aside uses absolute positioning. this means it is positioned according to its nearest positioned container which in this case would be the articles. </p>
+    </aside>
+
+    </div>
+
+    <footer>
+        <p>the footer uses fixed positioning.in this case it is at a fixed position at the bottom of the page. </p>
+    </footer>
